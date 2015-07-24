@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
    <title>Модуль приёма заказов</title>
-   <link rel="stylesheet" type="text/css" href="css/dev.css">
+   <link rel="stylesheet" type="text/css" href="css/layout.css">
+   <link rel="stylesheet" type="text/css" href="css/struct.css">
+   <script src="js/init.js"></script>
 </head>
 
 <!--
@@ -16,7 +18,8 @@
    wl - Widget Layer    (этим же префиксом обозначается и Composite Widget Layer )
 
    lc - Layout Class    (присваивается классам отвечающим за основные характеристики объекта - положение, размер и т.д.)
-   vc - Visual Class    (присваивается классам отвечающим за визуальное оформление элементов - цвет, граница и т.д.)
+   sc - Structure Class (присваивается классам отвечающим за структурирование элементов - меню, табпанели и т.д.)
+   gc - Graphical Class (присваивается классам отвечающим за визуальное оформление элементов - цвет, граница и т.д.)
    ac - Animation Class (присваивается классам отвечающим за анимацию объектов)
 
 ПРАВИЛА
@@ -35,15 +38,16 @@
 -->
 <body>
 <div id="BaseLayer" class="lc_BaseLayer">
-   <div id="wl_RenderArea" class="lc_VisArea vc_ThinBorder">
+   <div id="wl_RenderArea" class="lc_VisArea gc_ThinBorder">
       <canvas id="wRenderSpace" class="lc_RenderSpace"></canvas>
    </div>
-   <div id="b_DebugSpace" class="lc_DebugSpace vc_ThinBorder">
+
+   <div id="b_DebugSpace" class="lc_DebugSpace gc_ThinBorder">
       <pre></pre>    <!-- тег для вывода текста с исходным форматированием -->
    </div>
-   <div id="wl_InputArea" class="lc_InputArea vc_ThinBorder">
 
-   </div>
+   <div id="wl_InputArea" class="lc_InputArea gc_ThinBorder"></div>
 </div>
 </body>
+   <link rel="stylesheet" type="text/css" href="css/dev.css">
 </html>

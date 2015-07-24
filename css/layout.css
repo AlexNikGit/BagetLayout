@@ -1,0 +1,34 @@
+.lc_BaseLayer {}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+.lc_VisArea {     /* Visualisation Area */
+   position: absolute;
+   top: 20px;
+   bottom: 20px;
+   left: 20px;
+   right: 50%;
+   margin-right: 10px;
+   margin-bottom: 210px;
+}
+.lc_RenderSpace {
+   width: 100%;
+   height: 100%;
+}
+.lc_DebugSpace {
+   position: absolute;
+   height: 200px;
+   bottom: 20px;
+   left: 20px;
+   right: 50%;
+   margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+.lc_InputArea {
+   position: absolute;
+   top: 20px;
+   bottom: 20px;
+   left: 50%;
+   right: 20px;
+   margin-left: 10px;
+}
