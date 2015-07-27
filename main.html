@@ -4,7 +4,6 @@
    <meta charset="UTF-8">
    <title>Модуль приёма заказов</title>
    <link rel="stylesheet" type="text/css" href="css/layout.css">
-   <link rel="stylesheet" type="text/css" href="css/struct.css">
    <script src="js/init.js"></script>
 </head>
 
@@ -12,10 +11,12 @@
 УСЛОВНЫЕ ОБОЗНАЧЕНИЯ
    Префиксы:
    b - Block (блок из нескольких HTML-элементов)
-   bl - Block Layer
    w - Widget
    cw - Composite Widget
+   s - Service
+   bl - Block Layer
    wl - Widget Layer    (этим же префиксом обозначается и Composite Widget Layer )
+   sl - Service Layer
 
    lc - Layout Class    (присваивается классам отвечающим за основные характеристики объекта - положение, размер и т.д.)
    sc - Structure Class (присваивается классам отвечающим за структурирование элементов - меню, табпанели и т.д.)
@@ -37,16 +38,20 @@
    -
 -->
 <body>
-<div id="BaseLayer" class="lc_BaseLayer">
-   <div id="wl_RenderArea" class="lc_VisArea gc_ThinBorder">
+<!-- Framing Workshop Ordering Service - сервис оформления заказов для багетной мастреской -->
+<div id="s_FWOrdering" class="lc_FWOrdering">
+
+   <div id="wl_RenderArea" class="lc_VisArea gc_ThinBorder">      <!-- Область размещения пространства визуализации -->
       <canvas id="wRenderSpace" class="lc_RenderSpace"></canvas>
    </div>
-
-   <div id="b_DebugSpace" class="lc_DebugSpace gc_ThinBorder">
-      <pre></pre>    <!-- тег для вывода текста с исходным форматированием -->
+   <div id="b_DebugSpace" class="lc_DebugSpace gc_ThinBorder">    <!-- Область размещения отладочной консоли -->
+      <pre></pre>    <!-- тег <pre> используется для вывода текста с исходным форматированием -->
    </div>
 
-   <div id="wl_InputArea" class="lc_InputArea gc_ThinBorder"></div>
+   <!-- Область размещения виджетов ввода информации для оформления заказов -->
+   <div id="wl_InputArea" class="lc_InputArea gc_ThinBorder">
+      <script> loadCWidget( ); </script>
+   </div>
 </div>
 </body>
    <link rel="stylesheet" type="text/css" href="css/dev.css">

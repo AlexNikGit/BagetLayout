@@ -1,8 +1,6 @@
 var xhr = new XMLHttpRequest();
 
-window.onload = function ( ) {
-   getWidget( );
-};
+window.onload = function ( ) { };
 /* Пример динамической загрузки страницы (https://gist.github.com/ebidel/3581825):
 <script>
 var xhr = new XMLHttpRequest();
@@ -31,19 +29,29 @@ xhr.onload = function(e) {
 };
 xhr.send( );
 </script>*/
-function getWidget( ) {
-   var onLoadHandler = function(event) {
+function loadCWidget( ) {    /* Load Composite Widget */
+   var onLoadHandler = function( event ) {
       var doc = event.target.response;
 
-      var container = document.getElementById("wl_InputArea");
-      var wdg_document = doc.getElementById("w_CreateOrder");
+      var container = document.getElementById( "wl_InputArea" );
+      var cw_element = doc.getElementById( "cw_OrderingStage" );
       container.innerHTML = '';       // очистка контейнера
-      container.appendChild(wdg_document);
-   };
+      container.appendChild( cw_element );
 
-   xhr.open('GET', 'wdg/order.html');
+      /* загружаем скрипты и стили для обработки загружаемого комопзитного виджета */
+      var js_ref=document.createElement('script');
+      js_ref.setAttribute("src", "js/cw_OrderingStage.js");
+      var css_ref=document.createElement("link");
+      css_ref.setAttribute("rel", "stylesheet");
+      css_ref.setAttribute("type", "text/css");
+      css_ref.setAttribute("href", "css/cw_OrderingStage.css");
+      var doc_header = document.getElementsByTagName( "head" )[0];
+      doc_header.appendChild( js_ref );
+      doc_header.appendChild( css_ref );
+   };
+   xhr.open( 'GET', 'pages/c_widgets/order.html' );
    xhr.responseType = "document";
    xhr.withCredentials = true;
    xhr.onload = onLoadHandler;
-   xhr.send();
+   xhr.send( );
 }

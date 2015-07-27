@@ -1,0 +1,54 @@
+.lc_ProductOptions {
+   position: relative;
+   margin: 0 auto;
+   width: 700px;
+}
+.lc_ProductOptions > label {
+   color: #555;
+   cursor: pointer;
+   display: block;
+   float: left;
+   width: 150px;
+   height: 45px;
+   line-height: 45px;
+   position: relative;
+   top: 2px;
+   text-align: center;
+}
+
+.lc_ProductOptions > input {
+   position: absolute;
+   display: none;
+}
+
+#tab_1:checked  ~ #tab_l1,
+#tab_2:checked  ~ #tab_l2,
+#tab_3:checked  ~ #tab_l3 {
+   background: #fff;
+   border-color: #fff;
+   top: 0;
+   z-index: 3;}
+
+#b_ProductOptions .lc_WidgetsArea {
+   background: #fff;
+   position: relative;
+   z-index: 2;
+}
+
+#b_ProductOptions .lc_WidgetsArea > div {
+   position: absolute;
+   top: 0;
+   opacity: 0;
+   -moz-transition: opacity 0.5s ease-in-out;
+   -webkit-transition: opacity 0.5s ease-in-out;
+   transition: opacity 0.5s ease-in-out;
+}
+
+/* Родственные селекторы */
+#b_ProductOptions #tab_1:checked ~ .lc_WidgetsArea #tab_c1,
+#b_ProductOptions #tab_2:checked ~ .lc_WidgetsArea #tab_c2,
+#b_ProductOptions #tab_3:checked ~ .lc_WidgetsArea #tab_c3 {
+   position: static;
+   left: 0;
+   opacity: 1;
+}

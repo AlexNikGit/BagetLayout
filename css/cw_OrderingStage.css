@@ -1,0 +1,29 @@
+.lc_OrderingStage {
+
+}
+#cw_OrderingStage > div {
+   display: block;
+   border: 1px solid black;
+   width: 500px;
+}
+.lc_OrderingStage > section {
+   display: inline-block;
+   width: 100%;
+}
+.lc_SOParameterL {      /* Source Object Size Layer - область ввода размеров исходного объекта */
+
+}
+.lc_ProductOptionsL {   /* Source Object Options Layer - область ввода параметров оформления исходного объекта */
+
+}
+
+
+
+.lc_SOParameter {
+   position: relative;
+   margin: 0 auto;
+   width: 700px;
+}
+.lc_SOParameter > div {
+   float: right;
+}
