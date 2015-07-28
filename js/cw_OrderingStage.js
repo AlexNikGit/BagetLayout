@@ -6,7 +6,7 @@ function loadProductOptions( ) {
 
       var container = document.getElementById( "bl_ProductOptions" );
       var bl_element = doc.getElementById( "b_ProductOptions" );
-      container.innerHTML = '';       // очистка контейнера
+      //container.innerHTML = '';       // очистка контейнера
       container.appendChild( bl_element );
 
       /* загружаем скрипты и стили для обработки загружаемого блока */

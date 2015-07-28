@@ -14,7 +14,10 @@
 
 }
 .lc_ProductOptionsL {   /* Source Object Options Layer - область ввода параметров оформления исходного объекта */
-
+   position: absolute;
+   top: 120px;
+   bottom: 5px;
+   overflow-y: auto;
 }
 
 .lc_SOParameter {
@@ -33,4 +36,11 @@
    border: 1px solid black;
    margin: auto 1.0em;
 
+}
+
+.lc_DecorationTemplate {
+   position: absolute;
+   top: 10px;
+   right: 100px;
+   z-index: 5;
 }
