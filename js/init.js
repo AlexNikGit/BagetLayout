@@ -49,7 +49,7 @@ function loadCWidget( ) {    /* Load Composite Widget */
       doc_header.appendChild( js_ref );
       doc_header.appendChild( css_ref );
    };
-   xhr.open( 'GET', 'pages/c_widgets/order.html' );
+   xhr.open( 'GET', 'pages/c_widgets/cw_OrderingStage.html' );
    xhr.responseType = "document";
    xhr.withCredentials = true;
    xhr.onload = onLoadHandler;
