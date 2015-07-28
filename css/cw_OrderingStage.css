@@ -2,9 +2,9 @@
 
 }
 #cw_OrderingStage > div {
-   display: block;
+   display: inline-block;
    border: 1px solid black;
-   width: 500px;
+   width: 150px;
 }
 .lc_OrderingStage > section {
    display: inline-block;
@@ -17,13 +17,20 @@
 
 }
 
-
-
 .lc_SOParameter {
-   position: relative;
-   margin: 0 auto;
-   width: 700px;
+   display: inline-block;
+   vertical-align: middle;
+   width: 530px;
 }
 .lc_SOParameter > div {
    float: right;
+}
+.lc_SOParameter > div > output {
+   margin: auto 0.9em auto 0.1em;
+}
+.lc_SOParameterL > h3 {
+   display: inline-block;
+   border: 1px solid black;
+   margin: auto 1.0em;
+
 }

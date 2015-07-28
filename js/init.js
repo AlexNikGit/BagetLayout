@@ -34,9 +34,9 @@ function loadCWidget( ) {    /* Load Composite Widget */
       var doc = event.target.response;
 
       var container = document.getElementById( "wl_InputArea" );
-      var cw_element = doc.getElementById( "cw_OrderingStage" );
+      var cwdg_element = doc.getElementById( "cw_OrderingStage" );
       container.innerHTML = '';       // очистка контейнера
-      container.appendChild( cw_element );
+      container.appendChild( cwdg_element );
 
       /* загружаем скрипты и стили для обработки загружаемого комопзитного виджета */
       var js_ref=document.createElement('script');
