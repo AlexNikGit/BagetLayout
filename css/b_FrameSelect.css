@@ -1,0 +1,30 @@
+.lc_FrameSelect {
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+.lc_SortList{
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+.lc_FrameList {
+   list-style-type: none;
+   margin: 0;
+   height: 100px;
+   overflow: auto;
+   border: 2px solid darkgray;
+}
+.lc_FrameList > li:nth-child(odd) {
+   background: left center #dfdfdf url("http://www.kirupa.com/images/blue_tongue_icon.png") no-repeat;
+}
+.lc_FrameList > li:nth-child(even) {
+   background: left center #fff url("http://www.kirupa.com/images/gray_smiley.png") no-repeat;
+}
+.lc_FrameList > li > * {
+   display: inline;     /* возможно потребуется заменить на [inline-table] */
+}
+.lc_FrameList > li > img {
+   height: 32px;
+   width: 100px;
+}

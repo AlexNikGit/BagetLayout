@@ -3,7 +3,6 @@
 }
 #cw_OrderingStage > div {
    display: inline-block;
-   border: 1px solid black;
    width: 150px;
 }
 .lc_OrderingStage > section {
@@ -33,7 +32,6 @@
 }
 .lc_SOParameterL > h3 {
    display: inline-block;
-   border: 1px solid black;
    margin: auto 1.0em;
 
 }
