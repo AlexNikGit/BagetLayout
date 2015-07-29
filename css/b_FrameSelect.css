@@ -3,9 +3,28 @@
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-.lc_SortList{
+.lc_FrameListSort {
 
 }
+.lc_FrameListSort > fieldset > div {
+   display: inline-block;
+   font-size: 10pt;
+   text-align: center;
+}
+.lc_FrameListSort > fieldset > div > select {
+   display: block;
+   width: 110px;
+   font-size: 8pt;
+   text-align: center;
+}
+.lc_FrameListSort > fieldset > label#lblArtSearch {
+   margin-left: 50px;
+}
+.lc_FrameListSort > fieldset > input#txtArtSearch {
+    width: 300px;
+    font-size: 10pt;
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 .lc_FrameList {

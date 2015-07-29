@@ -6,38 +6,62 @@
            Оформить в виде отдельного подблоки и загружать динамически. При этом обработчик загрузки содержимого необходимо
            размещать в файле скрипта самого подблока, а не в файле скрипта обработчика данного блока-->
       <div id="b_FrameListSort" class="lc_FrameListSort">
-
-         <label for="selFrameMaterial">Материал:</label>
-         <select id="selFrameMaterial">
-            <option value="all">Все материалы</option>
-            <option value="code_1">xxx</option>
-            <option value="code_2">xxx</option>
-            <option value="code_3">xxx</option>
-         </select>
-
-         <label for="selProfileForm">Вид профиля:</label>
-         <select id="selProfileForm">
-            <option value="all">Все профили</option>
-            <option value="code_1">xxx</option>
-            <option value="code_2">xxx</option>
-            <option value="code_3">xxx</option>
-         </select>
-
-         <label for="selProfileWidth">Ширина профиля:</label>
-         <select id="selProfileWidth">
-            <option value="all">Все размеры</option>
-            <option value="code_1">xxx</option>
-            <option value="code_2">xxx</option>
-            <option value="code_3">xxx</option>
-         </select>
-
-         <label for="selProfileWidth">Цвет:</label>
-         <select id="selProfileWidth">
-            <option value="all">Все размеры</option>
-            <option value="code_1">xxx</option>
-            <option value="code_2">xxx</option>
-            <option value="code_3">xxx</option>
-         </select>
+         <fieldset>
+            <div>
+               Материал
+               <select id="selFrameMaterial">
+                  <option value="all">все материалы</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+            <div>
+               Профиль
+               <select id="selProfileForm">
+                  <option value="all">все профили</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+            <div>
+               Ширина
+               <select id="selProfileWidth">
+                  <option value="all">все размеры</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+            <div>
+               Цвет
+               <select id="selProfileColor">
+                  <option value="all">все цвета</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+            <div>
+               Цена
+               <select id="selProfilePrice">
+                  <option value="all">все цены</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+         </fieldset>
+         <fieldset>
+            <label id="lblArtSearch" for="txtArtSearch" >Поиск по артикулу:</label>
+            <input type="text" name="article" id="txtArtSearch" list="listArticles">
+            <datalist id="listArticles">
+               <option value="B_CODE_1">параметры багета №1</option>
+               <option value="B_CODE_2">параметры багета №2</option>
+               <option value="B_CODE_3">параметры багета №3</optionб>
+            </datalist>
+         </fieldset>
       </div>
    </section>
    <section id="bl_FrameList">

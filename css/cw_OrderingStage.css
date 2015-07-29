@@ -1,7 +1,7 @@
 .lc_OrderingStage {
 
 }
-#cw_OrderingStage > div {
+#cw_OrderingStage > fieldset {
    display: inline-block;
    width: 150px;
 }
@@ -10,11 +10,12 @@
    width: 100%;
 }
 .lc_SOParameterL {      /* Source Object Size Layer - область ввода размеров исходного объекта */
-
+   position: relative;
+   top: 10px;
 }
 .lc_ProductOptionsL {   /* Source Object Options Layer - область ввода параметров оформления исходного объекта */
-   position: absolute;
-   top: 120px;
+   position: relative;
+   top: 20px;
    bottom: 5px;
    overflow-y: auto;
 }
@@ -38,7 +39,7 @@
 
 .lc_DecorationTemplate {
    position: absolute;
-   top: 10px;
-   right: 100px;
+   top: 0;
+   right: 111px;
    z-index: 5;
 }
