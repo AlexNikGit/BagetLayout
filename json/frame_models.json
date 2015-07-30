@@ -1,0 +1,29 @@
+{
+  "frame_models":[
+    {
+      "image": "model_1.jpg",
+      "code":  "12-13-283/A1",
+      "color":  "Цвет_№1_#AE4"
+    },
+    {
+      "image": "model_2.jpg",
+      "code":  "12-13-284/A2",
+      "color":  "Цвет_№1_#A24"
+    },
+    {
+      "image": "model_3.jpg",
+      "code":  "12-13-284/A2",
+      "color":  "Цвет_№1_#AE4"
+    },
+    {
+      "image": "model_4.jpg",
+      "code":  "12-13-284/A2",
+      "color":  "Цвет_№1_#AAA"
+    },
+    {
+      "image": "model_5.jpg",
+      "code":  "12-3-3323/Ы1",
+      "color":  "Цвет_№1_#AF3"
+    }
+  ]
+}

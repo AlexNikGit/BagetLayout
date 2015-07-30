@@ -1,0 +1,44 @@
+{
+  "frame_types":[
+    {
+      "profile": "profile-1.svg",
+      "code": "100-25/S",
+      "type": "кривой",
+      "size": "51x32",
+      "mater": "пластик",
+      "price": "122 руб."
+    },
+    {
+      "profile": "profile-2.svg",
+      "code": "125-60/D",
+      "type": "ровный",
+      "size": "61x20",
+      "mater": "дерево",
+      "price": "45 руб."
+    },
+    {
+      "profile": "profile-1.svg",
+      "code": "100-25/S",
+      "type": "кривой",
+      "size": "51x32",
+      "mater": "пластик",
+      "price": "122 руб."
+    },
+    {
+      "profile": "profile-2.svg",
+      "code": "125-60/D",
+      "type": "ровный",
+      "size": "61x20",
+      "mater": "дерево",
+      "price": "45 руб."
+    },
+    {
+      "profile": "profile-3.svg",
+      "code": "102-12/P",
+      "type": "косой",
+      "size": "20x10",
+      "mater": "металл",
+      "price": "22 руб."
+    }
+  ]
+}

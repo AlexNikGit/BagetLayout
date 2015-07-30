@@ -10,12 +10,14 @@
    width: 100%;
 }
 .lc_SOParameterL {      /* Source Object Size Layer - область ввода размеров исходного объекта */
-   position: relative;
-   top: 10px;
+   position: absolute;
+   top: 50px;
+   left: 0;
 }
 .lc_ProductOptionsL {   /* Source Object Options Layer - область ввода параметров оформления исходного объекта */
-   position: relative;
-   top: 20px;
+   position: absolute;
+   top: 155px;
+   left: 0;
    bottom: 5px;
    overflow-y: auto;
 }
@@ -33,6 +35,7 @@
 }
 .lc_SOParameterL > h3 {
    display: inline-block;
+   vertical-align: middle;
    margin: auto 1.0em;
 
 }
