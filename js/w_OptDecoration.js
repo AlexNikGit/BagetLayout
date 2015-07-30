@@ -36,14 +36,14 @@ function loadPaspSelectBlock( ) {
       container.appendChild( wdg_element );
 
       /* загружаем скрипты и стили для обработки загружаемого блока */
-      /*var js_ref=document.createElement('script');
-       js_ref.setAttribute("src", "js/b_PaspSelect.js");*/
+      var js_ref=document.createElement('script');
+      js_ref.setAttribute("src", "js/b_PaspSelect.js");
       var css_ref=document.createElement("link");
       css_ref.setAttribute("rel", "stylesheet");
       css_ref.setAttribute("type", "text/css");
       css_ref.setAttribute("href", "css/b_PaspSelect.css");
       var doc_header = document.getElementsByTagName( "head" )[0];
-      /*doc_header.appendChild( js_ref );*/
+      doc_header.appendChild( js_ref );
       doc_header.appendChild( css_ref );
    };
    var xhr = new XMLHttpRequest();

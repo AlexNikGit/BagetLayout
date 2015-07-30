@@ -3,24 +3,24 @@
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-.lc_FrameListSort {
+.lc_FrameListFS {
 
 }
-.lc_FrameListSort > fieldset > div {
+.lc_FrameListFS > fieldset > div {
    display: inline-block;
    font-size: 10pt;
    text-align: center;
 }
-.lc_FrameListSort > fieldset > div > select {
+.lc_FrameListFS > fieldset > div > select {
    display: block;
    width: 110px;
    font-size: 8pt;
    text-align: center;
 }
-.lc_FrameListSort > fieldset > label#lblArtSearch {
+.lc_FrameListFS > fieldset > label#lblArtSearch {
    margin-left: 50px;
 }
-.lc_FrameListSort > fieldset > input#txtArtSearch {
+.lc_FrameListFS > fieldset > input#txtArtSearch {
     width: 300px;
     font-size: 10pt;
 }

@@ -1,11 +1,11 @@
 <meta charset="UTF-8">
 
 <div id="b_FrameSelect" class="lc_FrameSelect">
-   <section id="bl_FrameListSort">
-      <!-- Блок элементов поиска/сортировки список доступных профилей багета
+   <section id="bl_FrameListFS">     <!-- Frame List Filtering and Search -->
+      <!-- Блок элементов для фильтрации/поиска списка доступных профилей багета.
            Оформить в виде отдельного подблоки и загружать динамически. При этом обработчик загрузки содержимого необходимо
            размещать в файле скрипта самого подблока, а не в файле скрипта обработчика данного блока-->
-      <div id="b_FrameListSort" class="lc_FrameListSort">
+      <div id="b_FrameListFS" class="lc_FrameListFS">    <!-- Frame List Filtering and Search -->
          <fieldset>
             <div>
                Материал
@@ -54,18 +54,18 @@
             </div>
          </fieldset>
          <fieldset>
-            <label id="lblArtSearch" for="txtArtSearch" >Поиск по артикулу:</label>
+            <label id="lblArtSearch" for="txtArtSearch">Поиск по артикулу:</label>
             <input type="text" name="article" id="txtArtSearch" list="listArticles">
             <datalist id="listArticles">
                <option value="B_CODE_1">параметры багета №1</option>
                <option value="B_CODE_2">параметры багета №2</option>
-               <option value="B_CODE_3">параметры багета №3</optionб>
+               <option value="B_CODE_3">параметры багета №3</option>
             </datalist>
          </fieldset>
       </div>
    </section>
    <section id="bl_FrameList">
-      <!-- Список доступных профилей багета.
+      <!-- Список доступных профилей багета с возможностью сортировки.
            Оформить в виде отдельного подблоки и загружать динамически. При этом обработчик загрузки содержимого необходимо
            размещать в файле скрипта самого подблока, а не в файле скрипта обработчика данного блока -->
       <div id="b_FrameList" class="lc_FrameList gc_ThinBorder"></div>

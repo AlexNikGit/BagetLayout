@@ -1,5 +1,58 @@
 <meta charset="UTF-8">
 
 <div id="b_PaspSelect" class="lc_PaspSelect">
-   <p>добавить опцию "декорирование паспарту"</p>
+   <section id="bl_PaspListFS">           <!-- Paspartu List Filtering and Search -->
+      <!-- Блок элементов для фильтрации/поиска списка доступных паспарту с возможностью сортировки.
+           Оформить в виде отдельного подблоки и загружать динамически. При этом обработчик загрузки содержимого необходимо
+           размещать в файле скрипта самого подблока, а не в файле скрипта обработчика данного блока-->
+      <div id="b_PaspListFS" class="lc_PaspListFS gc_ThinBorder">    <!-- Paspartu List Filtering and Search -->
+         <fieldset>
+            <div class="gc_ThinBorder">
+               Качество
+               <select id="selPaspQuality">
+                  <option value="all">любое качество</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+            <div>
+               Цвет
+               <select id="selPaspColor">
+                  <option value="all">все цвета</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+            <div>
+               Текстура
+               <select id="selPaspTexture">
+                  <option value="all">любая текстура</option>
+                  <option value="code_1">xxx</option>
+                  <option value="code_2">xxx</option>
+                  <option value="code_3">xxx</option>
+               </select>
+            </div>
+         </fieldset>
+         <fieldset>
+            <label id="lblArtSearch" for="txtArtSearch">Артикул</label>
+            <input type="text" name="article" id="txtArtSearch" list="listArticles">
+            <datalist id="listArticles">
+               <option value="B_CODE_1">параметры паспарту №1</option>
+               <option value="B_CODE_2">параметры паспарту №2</option>
+               <option value="B_CODE_3">параметры паспарту №3</option>
+            </datalist>
+         </fieldset>
+      </div>
+   </section>
+   <section id="bl_PaspList">
+      <!-- Список доступных профилей багета с возможностью сортировки.
+            Оформить в виде отдельного подблоки и загружать динамически. При этом обработчик загрузки содержимого необходимо
+            размещать в файле скрипта самого подблока, а не в файле скрипта обработчика данного блока -->
+      <div id="b_PaspList" class="lc_PaspList gc_ThinBorder"></div>
+   </section>
+   <section id="bl_PaspSheets">
+
+   </section>
 </div>
