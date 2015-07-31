@@ -1,6 +1,10 @@
 .lc_PaspSelect {
 
 }
+.lc_PaspSelect > section {
+   display: inline-block;
+}
+
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 .lc_PaspListFS {
@@ -40,14 +44,29 @@
 
 }
 .lc_PaspList > ul {
+   display: block;
+   height: 100px;
+   width: 250px;
    padding: 5px;
    border: 2px solid darkgray;
-   overflow: auto;
+   overflow-y: auto;
    list-style-type: none;
+   margin: 0;
+}
+/* нельзя отобрадать как таблицу с ячейками поскольку img должно быть блочным. Переделать так же для рамок */
+.lc_PaspList > ul > li {
+   height: 32px;
 }
 .lc_PaspList > ul > li > img {
    display: inline-block;
-   height: 32px;
-   width: 100px;
-   border: 1px solid black;
+   vertical-align: middle;
+   height: 24px;
+   width: 64px;
+}
+.lc_PaspList >  ul > li > span {
+   display: inline-block;
+   vertical-align: middle;
+   margin: auto 3px;
+   font-size: 10pt;
+
 }
