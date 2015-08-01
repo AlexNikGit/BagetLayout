@@ -53,7 +53,7 @@ function genPaspSheets( ) {
       }
       out += '</ul>';
 
-      container.innerHTML = out;
+      //container.innerHTML = out;
    };
    var xhr = new XMLHttpRequest();
    xhr.open( 'GET', 'json/pasp_list.json' );
