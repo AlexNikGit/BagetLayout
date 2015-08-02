@@ -3,6 +3,7 @@
 }
 .lc_PaspSelect > section {
    display: inline-block;
+   vertical-align: middle;
 }
 
 
@@ -78,6 +79,7 @@
 }
 .container .dropdown {
    text-align: left;
+   float: left;
 }
 
 .dropdown {
@@ -188,4 +190,34 @@
    background-image: -moz-linear-gradient(top, #5e9ace, #416cb8);
    background-image: -o-linear-gradient(top, #5e9ace, #416cb8);
    background-image: linear-gradient(to bottom, #5e9ace, #416cb8);
+}
+
+.lc_PaspSheetInfo {
+   height: 150px;
+}
+.lc_PaspSheetInfo > div {
+
+}
+.lc_PaspSheetInfo > div > span {
+   display: inline-block;
+   vertical-align: middle;
+   font-size: 10pt;
+}
+.lc_PaspSheetInfo > div > input[type="text"] {
+   display: inline-block;
+   vertical-align: middle;
+   width: 50px;
+}
+.lc_PaspSheetInfo > div > img {
+   display: inline-block;
+   vertical-align: middle;
+   height: 24px;
+   width: 64px;
+}
+.lc_PaspSheetInfo > button {
+   width: 100%;
+   height: 35px;
+   /*padding:50px 10px;*/     /* выравнивание объектов внутри кнопки */
+   background: #78aad5 url("../img/icon/add_pasp_layer.svg") 20px center no-repeat;
+   border: none;
 }
