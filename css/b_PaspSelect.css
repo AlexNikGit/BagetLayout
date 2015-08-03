@@ -10,16 +10,20 @@
 /* ------------------------------------------------------------------------------------------------------------------ */
 .lc_PaspListFS {
    width: 190px;
+   height: 165px;
+   position: relative;
 }
 .lc_PaspListFS > fieldset {
    padding: 0;
    font-size: 10pt;
+   padding: 6px 0;
 }
 .lc_PaspListFS > fieldset > div {
    display: inline-block;
    vertical-align: middle;
    float: right;
    font-size: 10pt;
+   padding: 5px 0;
 }
 .lc_PaspListFS > fieldset > div > select {
    display: inline-block;
@@ -42,12 +46,18 @@
 
 /* ------------------------------------------------------------------------------------------------------------------ */
 .lc_PaspList {
-
+   height: 165px;
+   width: 265px;
+   position: relative;
 }
 .lc_PaspList > ul {
+   position: absolute;
    display: block;
-   height: 100px;
-   width: 250px;
+   /* для выравнивания по краям контейнер должен быть [relative] */
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
    padding: 5px;
    border: 2px solid darkgray;
    overflow-y: auto;
@@ -73,11 +83,13 @@
 }
 
 /* ------------------------------------------------------------------------------------------------------------------ */
-.container {
-   /*width: 180px;*/
+.lc_PaspSheets {
+   position: relative;
    text-align: center;
+   height: 165px;
 }
-.container .dropdown {
+
+.lc_PaspSheets > .dropdown {
    text-align: left;
    float: left;
 }
@@ -193,7 +205,7 @@
 }
 
 .lc_PaspSheetInfo {
-   height: 150px;
+
 }
 .lc_PaspSheetInfo > div {
 
@@ -214,7 +226,7 @@
    height: 24px;
    width: 64px;
 }
-.lc_PaspSheetInfo > button {
+.lc_PaspSheetManip > button {
    width: 100%;
    height: 35px;
    /*padding:50px 10px;*/     /* выравнивание объектов внутри кнопки */

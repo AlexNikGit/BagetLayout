@@ -4,16 +4,16 @@
    <!-- количество полей в макете блока должно формироваться динамически -->
    <input id="tab_1" type="radio" name="tab" checked="checked" />
    <input id="tab_2" type="radio" name="tab" />
-   <!--<input id="tab_3" type="radio" name="tab" />-->
+   <input id="tab_3" type="radio" name="tab" />
    <label for="tab_1" id="tab_l1" class="gc_ThinBorder" onclick="loadDecorationWidget( )">Оформление</label>
    <label for="tab_2" id="tab_l2" class="gc_ThinBorder" onclick="loadPickingWidget( )">Комплектация</label>
-   <!--<label for="tab_3" id="tab_l3" class="gc_ThinBorder">Tab Three</label>-->
+   <label for="tab_3" id="tab_l3" class="gc_ThinBorder" onclick="loadMaterialWidget( )">Расход</label>
    <div style="clear:both"></div>
 
    <!-- количество областей отображения формируется динамически соответственно количеству полей -->
    <div class="lc_WidgetsArea">
       <div id="tab_c1" class="gc_ThinBorder"></div>
       <div id="tab_c2" class="gc_ThinBorder"></div>
-      <!--<div id="tab_c3" class="gc_ThinBorder"></div>-->
+      <div id="tab_c3" class="gc_ThinBorder"></div>
    </div>
 </div>

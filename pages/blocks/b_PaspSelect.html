@@ -52,40 +52,11 @@
             размещать в файле скрипта самого подблока, а не в файле скрипта обработчика данного блока -->
       <div id="b_PaspList" class="lc_PaspList gc_ThinBorder"></div>
    </section>
-   <section id="bl_PaspSheets" class="container">
+   <section id="bl_PaspSheets">
       <!-- Список необходимых слоёв паспарту.
            Оформить в виде отдельного подблоки и загружать динамически. При этом обработчик загрузки содержимого необходимо
            размещать в файле скрипта самого подблока, а не в файле скрипта обработчика данного блока -->
       <!-- <div id="b_PaspSheets" class="lc_PaspSheets gc_ThinBorder"></div> -->
-      <div>
-         <section class="dropdown">
-            <label>Слои багета</label>
-            <div>
-               <ul>
-                  <li><a href="index.html">1-й слой</a></li>
-                  <li><a href="index.html">2-й слой</a></li>
-                  <li><a href="index.html">3-й слой</a></li>
-               </ul>
-            </div>
-         </section>
-         <section class="lc_PaspSheetInfo gc_ThinBorder">
-            <h5>1-й слой</h5>
-            <div>
-               <!-- добавить возможность выбора разной ширины для разных (верх, право, низ, лево) полей -->
-               <span>Ширина поля</span>
-               <input type="text" name="SheetWidth" id="txtPaspSheetWidth">
-            </div>
-            <div>
-               <span>Цвет/текстура</span>
-               <img style="background-color: #416cb8;"/>
-            </div>
-            <div>
-               <!-- добавить обработчик oncheck (при выборе появляется выбор декора для паспарту в поле "кант/декор") -->
-               <input type="checkbox">
-               <span>Добавить декор</span>
-            </div>
-            <button>Добавить слой</button>
-         </section>
-      </div>
+      <div id="b_PaspSheets" class="lc_PaspSheets gc_ThinBorder"></div>
    </section>
 </div>
