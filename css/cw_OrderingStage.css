@@ -42,7 +42,7 @@
 
 .lc_DecorationTemplate {
    position: absolute;
-   top: 0;
-   right: 111px;
+   top: 8px;
+   right: 3px;
    z-index: 5;
 }
