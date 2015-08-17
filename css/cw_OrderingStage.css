@@ -1,7 +1,7 @@
 .lc_OrderingStage {
 
 }
-#cw_OrderingStage > fieldset {
+#cw_OrderingStage > section#l_SelectMeasurement > fieldset {
    display: inline-block;
    width: 150px;
 }
