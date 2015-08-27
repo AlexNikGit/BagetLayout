@@ -33,11 +33,9 @@
 .lc_SOParameter > div > output {
    margin: auto 0.9em auto 0.1em;
 }
-.lc_SOParameterL > h3 {
-   display: inline-block;
-   vertical-align: middle;
-   margin: auto 1.0em;
 
+.lc_SOParameterL > fieldset > legend {
+   margin: auto 1.0em;
 }
 
 .lc_DecorationTemplate {
